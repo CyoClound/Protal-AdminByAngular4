@@ -1,0 +1,47 @@
+.header {
+	width: 100%;
+	background: #fff;
+	height: 160px;
+}
+.header-top {
+    height: 120px;
+    width: 100%;
+}
+.header-foot{
+    height: 40px;
+    font-size: 0;
+    background: #ebebeb;
+    min-width: 1024px;
+}
+.header-menu{
+    width: 1024px;
+    margin: 0 auto;
+}
+.header-menu-item{
+    padding: 0 29px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    display: inline-block;
+    margin-left: 0;
+    color: #666;
+}
+.menu-active{
+    background: #057E7A;
+    color: #fff;
+}
+
+.content-body{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 100px;
+    min-height: 800px;
+    min-width: 1024px;
+    position: relative;
+}
+.main-content{
+    width: 1024px;
+    margin: 0 auto;
+}
