@@ -66,7 +66,10 @@ export class ExtensionHttp extends Http {
      if (options.headers == null) {
        options.headers = new Headers();
      }
-     options.headers.append('Content-Type', 'application/json');
+     options.headers.append('Content-Type', 'application/x-www-form-urlencoded');
+     if(localStorage.getItem('access_token')){
+      options.headers.append('access_token', localStorage.getItem('access_token'));
+     }
      return options;
    }
 

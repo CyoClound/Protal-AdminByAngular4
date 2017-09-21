@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Http, HttpModule, XHRBackend, RequestOptions } from '@angular/http';
@@ -53,16 +54,19 @@ export function interceptorFactory(xhrBackend: XHRBackend, requestOptions: Reque
   imports: [
     FormsModule,
     HttpModule,
+    BrowserModule,
     RouterModule.forChild(AdminAppRouteConfig)
   ],
   exports: [
     AdminAppComponent
   ],
-  providers: [AdminService, PubSubService, {
-    provide: ExtensionHttp,
-    useFactory: interceptorFactory,
-    deps: [XHRBackend, RequestOptions, PubSubService]
-  }],
+  providers: [AdminService, PubSubService,
+    {
+      provide: ExtensionHttp,
+      useFactory: interceptorFactory,
+      deps: [XHRBackend, RequestOptions, PubSubService]
+    }
+  ],
   bootstrap: [AdminAppComponent]
 })
 export class AdminAppModule { }

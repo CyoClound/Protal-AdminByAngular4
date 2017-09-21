@@ -39,6 +39,7 @@ export function interceptorFactory(xhrBackend: XHRBackend, requestOptions: Reque
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     RouterModule,
     HomeAppModule,
     AdminAppModule,
