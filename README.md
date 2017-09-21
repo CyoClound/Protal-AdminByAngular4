@@ -26,3 +26,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+特别鸣谢：
+CoreUI :https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template
+whirl:https://github.com/jh3y/whirl
+ts-md5:https://github.com/cotag/ts-md5
+
